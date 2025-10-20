@@ -1,0 +1,4 @@
+bin/
+obj/
+migrations/
+ReVeste.db

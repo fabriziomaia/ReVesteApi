@@ -1,0 +1,6 @@
+@ReVeste.API_HostAddress = http://localhost:5121
+
+GET {{ReVeste.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
