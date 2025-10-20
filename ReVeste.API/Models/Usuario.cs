@@ -18,7 +18,7 @@ namespace ReVeste.API.Models
         [EmailAddress]
         public string Email { get; set; }
 
-        public ICollection<Aposta> Apostas { get; set; }
+        public ICollection<Aposta>? Apostas { get; set; }
     }
 }
 

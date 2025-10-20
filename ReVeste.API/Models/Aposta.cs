@@ -8,12 +8,14 @@ namespace ReVeste.API.Models
     public class Aposta
     {
         [Key]
+        [JsonIgnore]
         public int Id { get; set; }
 
         [Required]
         public int UsuarioId { get; set; }
+
         [JsonIgnore]
-        public Usuario Usuario { get; set; }
+        public Usuario? Usuario { get; set; }
 
         [Required]
         [Column(TypeName = "decimal(18, 2)")]
@@ -26,4 +28,3 @@ namespace ReVeste.API.Models
         public string Descricao { get; set; }
     }
 }
-
